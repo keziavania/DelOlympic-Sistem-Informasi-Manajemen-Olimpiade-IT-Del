@@ -23,18 +23,50 @@ class DelOlympicData
     public static function getCategories()
     {
         return [
+            ['id' => 'akademik', 'name' => 'Akademik & Sains', 'icon' => 'fa-graduation-cap', 'count' => 3, 'color' => 'sky'],
             ['id' => 'tech', 'name' => 'Teknologi & Coding', 'icon' => 'fa-code', 'count' => 4, 'color' => 'blue'],
             ['id' => 'design', 'name' => 'Desain UI/UX', 'icon' => 'fa-palette', 'count' => 3, 'color' => 'indigo'],
             ['id' => 'cyber', 'name' => 'Keamanan Siber (CTF)', 'icon' => 'fa-shield-halved', 'count' => 2, 'color' => 'emerald'],
             ['id' => 'esport', 'name' => 'E-Sport & Gaming', 'icon' => 'fa-gamepad', 'count' => 3, 'color' => 'purple'],
             ['id' => 'robotik', 'name' => 'Robotika & IoT', 'icon' => 'fa-robot', 'count' => 2, 'color' => 'amber'],
-            ['id' => 'bisnis', 'name' => 'Business Case', 'icon' => 'fa-chart-pie', 'count' => 2, 'color' => 'rose'],
         ];
     }
 
     public static function getCompetitions()
     {
         return [
+            [
+                'id' => 5,
+                'slug' => 'del-science-math-olympiad-2026',
+                'title' => 'Del National Science & Mathematics Olympiad 2026',
+                'category' => 'Akademik & Sains',
+                'category_id' => 'akademik',
+                'organizer' => 'Fakultas Informatika & Sains IT Del',
+                'organizer_id' => 5,
+                'organizer_avatar' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80',
+                'poster' => 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
+                'status_pendaftaran' => 'Dibuka',
+                'reg_start' => '10 Nov 2026',
+                'reg_end' => '05 Des 2026',
+                'event_date' => '15 - 16 Des 2026',
+                'location' => 'Gedung Kuliah 9 IT Del & CBT Online',
+                'featured' => true,
+                'prize_pool' => 'Rp 20.000.000',
+                'participants_count' => 64,
+                'max_quota' => 120,
+                'description' => 'Olimpiade sains dan matematika komputasi tingkat nasional yang menguji penalaran matematis, kalkulus, statistika analitik, dan logika sains tingkat lanjut.',
+                'rules' => [
+                    'Peserta adalah mahasiswa/i aktif S1/D4/D3 atau siswa SMA/MA sederajat.',
+                    'Kompetisi bersifat individu.',
+                    'Babak penyisihan menggunakan sistem Computer-Based Test (CBT) Del.',
+                    'Babak final berupa essay problem-solving dan presentasi analisis.',
+                ],
+                'contact' => 'olimpiade.sains@del.ac.id | Telp: +62 811-2233-4455',
+                'branches' => [
+                    ['id' => 501, 'name' => 'Matematika Komputasi & Diskrit', 'quota' => 60, 'registered' => 38, 'type' => 'CBT & Penilaian Juri', 'fee' => 'Gratis'],
+                    ['id' => 502, 'name' => 'Fisika Terapan & Logika Sains', 'quota' => 60, 'registered' => 26, 'type' => 'CBT & Penilaian Juri', 'fee' => 'Gratis'],
+                ]
+            ],
             [
                 'id' => 1,
                 'slug' => 'del-programming-contest-2026',
